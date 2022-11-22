@@ -10,7 +10,52 @@
 
     <!-- Javascript -->
     <script src="assets/js/general.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>DITISDIRK</title>
   </head>
-  <body></body>
+  <body>
+    <header class="flex">
+      <img
+        src="./assets/images/DITISDIRK.png"
+        alt="Logo DITISDIRK"
+        class="logo"
+      />
+      <div
+        class="mobile-nav-toggle"
+        aria-controls="mainnav"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <div class="menu-btn__burger"></div>
+      </div>
+      <nav>
+        <ul
+          class="flex mainnav"
+          id="mainnav"
+          aria-label="Main"
+          data-visible="false"
+        >
+          <li class="menu-link">
+            <a href="#" aria-current="page">Home</a>
+          </li>
+          <li class="menu-link">
+            <a href="#">About</a>
+          </li>
+          <li class="menu-link">
+            <a href="#">Work</a>
+          </li>
+          <li class="menu-link">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+@use "../base";
+
+body {
+  display: grid;
+}
+
+@media (min-width: 65em) {
+  body {
+    grid-template-columns: minmax(2rem, 1fr) repeat(12, minmax(0, 5rem)) minmax(
+        2rem,
+        1fr
+      );
+  }
+}
