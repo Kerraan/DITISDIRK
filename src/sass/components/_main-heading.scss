@@ -1,0 +1,10 @@
+@use "../base";
+
+.hero {
+  grid-column: 1 / span 6;
+  padding-block-start: 15rem;
+  padding-block-end: 2rem;
+  flex-direction: column;
+  --gap: 0.5rem;
+  height: 100vh;
+}

@@ -4,8 +4,19 @@ header {
   padding: 1.5rem 0;
   justify-content: space-between;
   align-items: center;
-  grid-column: 2/14;
   align-self: start;
+  grid-column: 2/4;
+  position: fixed;
+  padding-inline: 1.5rem;
+  width: 100%;
+  background-color: var(--clr-yellow);
+}
+
+@media (min-width: 65em) {
+  header {
+    grid-column: 2/4;
+    align-self: start;
+  }
 }
 
 .logo {

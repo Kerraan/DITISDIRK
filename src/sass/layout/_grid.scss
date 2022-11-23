@@ -1,14 +1,16 @@
 @use "../base";
 
-body {
+.grid-container--2-col {
   display: grid;
+  grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 50rem)) minmax(
+      2rem,
+      1fr
+    );
+  height: fit-content;
 }
 
-@media (min-width: 65em) {
-  body {
-    grid-template-columns: minmax(2rem, 1fr) repeat(12, minmax(0, 5rem)) minmax(
-        2rem,
-        1fr
-      );
-  }
+.grid-container--6-col {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column: 2/4;
 }

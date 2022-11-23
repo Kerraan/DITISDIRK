@@ -13,7 +13,7 @@
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 6.25rem;
   --fs-700: 3.5rem;
-  --fs-600: 1.75rem;
+  --fs-600: 2rem;
   --fs-500: 1.75rem;
   --fs-450: 1.4rem;
   --fs-400: 1.125rem;
@@ -21,7 +21,7 @@
   --fs-200: 0.875rem;
 
   @media (min-width: 45em) {
-    --fs-600: 2.5rem;
+    --fs-600: 3.5rem;
     --fs-450: 1.75rem;
     --fs-300: 1.125rem;
   }
