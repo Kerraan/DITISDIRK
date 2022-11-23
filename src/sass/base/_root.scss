@@ -3,7 +3,7 @@
 
   --clr-black: rgb(33, 33, 33);
   --clr-yellow: rgb(254, 216, 60);
-  --clr-white: rgb(255, 255, 255);
+  --clr-white: rgb(243, 243, 243);
   --clr-purple: rgb(162, 91, 210);
 
   /* font-families */
@@ -13,6 +13,7 @@
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 6.25rem;
   --fs-700: 3.5rem;
+  --fs-650: 2.5rem;
   --fs-600: 2rem;
   --fs-500: 1.75rem;
   --fs-450: 1.4rem;
@@ -74,10 +75,11 @@ html:focus-within {
 body {
   height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: var(--ff-sans-serif);
   font-size: var(--fs-400);
   background: var(--clr-yellow);
+  color: var(--clr-black);
   // overflow-x: hidden;
 }
 

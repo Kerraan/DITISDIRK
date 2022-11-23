@@ -1,0 +1,32 @@
+footer {
+  grid-column: span 4;
+  padding-block: 6rem;
+  row-gap: 1.8rem;
+}
+
+.contact-title {
+  grid-column: 2 / span 2;
+}
+
+.cta-form {
+  grid-column: 2 / span 2;
+  flex-direction: column;
+}
+
+.email {
+  grid-column: 2 / span 2;
+  a {
+    text-decoration: none;
+  }
+}
+
+.mobiel {
+  grid-column: 2 / span 2;
+  a {
+    text-decoration: none;
+  }
+}
+
+.socials {
+  grid-column: 2 / span 2;
+}

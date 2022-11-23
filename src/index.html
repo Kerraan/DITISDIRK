@@ -60,7 +60,7 @@
     <main class="grid-container--6-col">
       <section class="hero flex">
         <p class="fs-450">Hi, ik ben Dirk</p>
-        <p class="fs-600 bold">Webdeveloper</p>
+        <h1 class="fs-600 bold">Webdeveloper</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -68,7 +68,65 @@
         </p>
         <a href="#" class="btn-work">Work</a>
       </section>
-      <section></section>
+      <section class="work flex">
+        <h2 class="work-title fs-600 bold">
+          Website Public Leadership Foundation
+        </h2>
+        <picture>
+          <source srcset="/assets/images/work-1.webp" type="image/webp" />
+          <source srcset="/assets/images/work-1.png" type="image/png" />
+          <img
+            src="/assets/images/work-1.png"
+            alt="Display of work preview"
+            class="work-img"
+          />
+          <p class="coming-soon text-white fs-300">coming soon</p>
+        </picture>
+        <article>
+          <h3>Werkwijze</h3>
+          <p>
+            Deze website heb ik gemaakt met
+            <a class="link" href="https://www.11ty.dev">11ty</a> in combinatie
+            met
+            <a class="link" href="https://www.netlifycms.org">Netlify CMS</a>.
+            Het voordeel hiervan is een snelle en veilige website doordat er
+            geen externe server nodig is om het CMS te hosten. De klant beheert
+            de content waar het haar/hem om gaat en ik zorg voor de rest.
+            Tijdens ontwikkeling heb ik gebruik gemaakt van HTML, SCSS,
+            Javascript, Nunjucks templates en JSON. Zodra de content klaar is
+            gaan we live. In een gesprek kan ik de live-versie van de site laten
+            zien en hoe het werk.
+          </p>
+        </article>
+      </section>
     </main>
+    <footer class="bg-black grid-container--2-col text-white">
+      <div class="contact-title">
+        <p class="fs-600 text-white bold">Laten we samenwerken!</p>
+      </div>
+      <div class="email">
+        <p>Email:</p>
+        <a class="text-white" href="mailto: dirk.burgers@live.nl"
+          >dirk.burgers@live.nl</a
+        >
+      </div>
+      <div class="mobiel">
+        <p>Mobiel:</p>
+        <a class="text-white" href="tel:+31681767514">+31 6 81767514</a>
+      </div>
+      <div class="socials flex">
+        <ion-icon class="fs-650" name="logo-github"></ion-icon>
+        <ion-icon class="fs-650" name="logo-linkedin"></ion-icon>
+      </div>
+    </footer>
+    <!-- ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

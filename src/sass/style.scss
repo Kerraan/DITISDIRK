@@ -1,3 +1,11 @@
 @use "base";
 @use "layout";
 @use "components";
+@use "theme";
+
+.dark-theme {
+  --clr-yellow: rgb(33, 33, 33);
+  --clr-purple: rgb(254, 216, 60);
+  --clr-white: rgb(33, 33, 33);
+  --clr-black: rgb(243, 243, 243);
+}
