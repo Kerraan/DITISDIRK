@@ -2,7 +2,7 @@
 
 .work {
   grid-column: span 6;
-  padding-block: 6rem;
+  margin-block: 6rem;
   flex-direction: column;
   align-items: center;
   text-align: left;
@@ -46,4 +46,10 @@
   // &:visited {
   //   color: var(--clr-purple);
   // }
+}
+
+@media (min-width: 55em) {
+  .work {
+    --gap: 3rem;
+  }
 }

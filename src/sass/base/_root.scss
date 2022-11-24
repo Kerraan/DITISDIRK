@@ -3,7 +3,7 @@
 
   --clr-black: rgb(33, 33, 33);
   --clr-yellow: rgb(254, 216, 60);
-  --clr-white: rgb(243, 243, 243);
+  --clr-white: #f3f3f3;
   --clr-purple: rgb(162, 91, 210);
 
   /* font-families */
@@ -21,7 +21,8 @@
   --fs-300: 1rem;
   --fs-200: 0.875rem;
 
-  @media (min-width: 45em) {
+  @media (min-width: 38em) {
+    --fs-650: 4.5rem;
     --fs-600: 3.5rem;
     --fs-450: 1.75rem;
     --fs-300: 1.125rem;
@@ -67,7 +68,7 @@ ol[role="list"] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
@@ -77,7 +78,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-family: var(--ff-sans-serif);
-  font-size: var(--fs-400);
+  font-size: var(--fs-450);
   background: var(--clr-yellow);
   color: var(--clr-black);
   // overflow-x: hidden;
