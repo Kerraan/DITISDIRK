@@ -25,6 +25,7 @@
 .work-img {
   border-radius: 20px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.395);
+  width: 60rem;
 }
 
 .work picture {
@@ -48,8 +49,14 @@
   // }
 }
 
+.workflow {
+  max-width: 70rem;
+}
+
 @media (min-width: 55em) {
   .work {
     --gap: 3rem;
+    padding-inline: 3rem;
+    margin-block-end: 12rem;
   }
 }

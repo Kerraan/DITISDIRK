@@ -11,6 +11,66 @@
   margin-top: auto;
 }
 
+.neon-btn {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: auto;
+  color: var(--clr-purple);
+  border: var(--clr-purple) 4px solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.45em var(--clr-purple);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-purple), 0 0 0.5em 0 var(--clr-purple);
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: var(--clr-white);
+    text-shadow: none;
+  }
+}
+
+.neon-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-purple);
+  opacity: 0;
+  background-color: var(--clr-purple);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-btn::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-purple);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.4;
+}
+
+.neon-btn:hover::before,
+.neon-btn:focus::before {
+  opacity: 0.7;
+}
+
+.neon-btn:hover::after,
+.neon-btn:focus::after {
+  opacity: 1;
+}
+
 .sign-up-btn {
   position: relative;
   padding: 0.7rem 1.4rem;
@@ -24,6 +84,11 @@
 
 @media (min-width: 55em) {
   .btn-work {
+    align-self: flex-start;
+    margin-top: 6rem;
+  }
+
+  .neon-btn {
     align-self: flex-start;
     margin-top: 6rem;
   }

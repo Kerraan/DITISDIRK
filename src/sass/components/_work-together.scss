@@ -2,8 +2,17 @@ footer {
   grid-column: span 4;
   padding-block: 6rem;
   row-gap: 1.8rem;
+  height: 100vh;
 }
 
+.icon-text-white {
+  text-decoration: none;
+  color: var(--clr-white);
+
+  &:hover {
+    color: var(--clr-purple);
+  }
+}
 .contact-title {
   grid-column: 2 / span 2;
 }
@@ -29,4 +38,14 @@ footer {
 
 .socials {
   grid-column: 2 / span 2;
+}
+
+@media (min-width: 55em) {
+  footer {
+    padding-block: 12rem;
+  }
+
+  div {
+    padding-inline: 3rem;
+  }
 }

@@ -18,15 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+
     <title>DITISDIRK</title>
   </head>
   <body class="grid-container--2-col">
     <header class="flex">
-      <img
-        src="./assets/images/DITISDIRK.png"
-        alt="Logo DITISDIRK"
-        class="logo"
-      />
+      <a href="index.html#home">
+        <img
+          src="./assets/images/DITISDIRK.png"
+          alt="Logo DITISDIRK"
+          class="logo"
+        />
+      </a>
       <div
         class="mobile-nav-toggle"
         aria-controls="mainnav"
@@ -43,32 +46,36 @@
           data-visible="false"
         >
           <li class="menu-link">
-            <a href="#" aria-current="page">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="menu-link">
-            <a href="#">About</a>
+            <a class="nav-link" href="#work">Werk</a>
           </li>
           <li class="menu-link">
-            <a href="#">Work</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="menu-link">
-            <a href="#">Contact</a>
+            <a href="about.html">Over</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="grid-container--6-col">
-      <section class="hero flex">
+      <section id="home" class="hero section flex">
         <p class="fs-450">Hi, ik ben Dirk</p>
         <h1 class="fs-650 bold">Webdeveloper</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation
+          Ben je benieuwd naar mijn werk? Klik dan op de neon knop hieronder of
+          check mijn
+          <a class="icon-text-black" href="https://github.com/Kerraan"
+            >github<ion-icon class="fs-600" name="logo-github"></ion-icon
+          ></a>
+          . Ben je net zo enthousiast over web-development als ik? Neem vooral
+          contact op en laten we een koffie doen!<span class="koffie">☕️</span>
         </p>
-        <a href="#work" class="btn-work">Work</a>
+        <a href="#work" class="neon-btn">Werk</a>
       </section>
-      <section id="work" class="work flex">
+      <section id="work" class="work section flex">
         <h2 class="work-title fs-600 bold">
           Website Public Leadership Foundation
         </h2>
@@ -82,25 +89,28 @@
           />
           <p class="coming-soon text-white fs-300">coming soon</p>
         </picture>
-        <article>
+        <article class="workflow">
           <h3>Werkwijze</h3>
           <p>
-            Deze website heb ik ontworpene en ontwikkeld met
+            Deze website heb ik ontworpen in Figma en ontwikkeld met
             <a class="link" href="https://www.11ty.dev">11ty</a> in combinatie
             met
             <a class="link" href="https://www.netlifycms.org">Netlify CMS</a>.
-            Het voordeel hiervan is een snelle en veilige website doordat er
-            geen externe server nodig is om het CMS te hosten. De klant beheert
-            de content waar het haar/hem om gaat en ik zorg voor de rest.
-            Tijdens ontwikkeling heb ik gebruik gemaakt van HTML, SCSS,
-            Javascript, Nunjucks templates en JSON. Zodra de content klaar is
-            gaan we live. In een gesprek kan ik de live-versie van de site laten
-            zien en hoe het werk.
+            Het voordeel hiervan is een snelle en veilige website. Daarnaast is
+            er geen externe server nodig om het CMS te hosten. De klant beheert
+            de content waar het haar/hem om gaat, zoals blogs, evenementen en
+            workshops, en ik zorg voor de rest. Tijdens ontwikkeling heb ik
+            gebruik gemaakt van HTML, SCSS, Javascript, Nunjucks templates en
+            JSON. Zodra de content klaar is gaan we live. In een gesprek kan ik
+            de live-versie van de site laten zien en hoe het werk.
           </p>
         </article>
       </section>
     </main>
-    <footer class="bg-black grid-container--2-col text-white">
+    <footer
+      id="contact"
+      class="bg-black section grid-container--2-col text-white"
+    >
       <div class="contact-title">
         <p class="fs-600 text-white bold">Laten we samenwerken!</p>
       </div>
@@ -115,8 +125,18 @@
         <a class="text-white" href="tel:+31681767514">+31 6 81767514</a>
       </div>
       <div class="socials flex">
-        <ion-icon class="fs-650" name="logo-github"></ion-icon>
-        <ion-icon class="fs-650" name="logo-linkedin"></ion-icon>
+        <a href="https://github.com/Kerraan"
+          ><ion-icon
+            class="fs-650 icon-text-white"
+            name="logo-github"
+          ></ion-icon
+        ></a>
+        <a href="https://www.linkedin.com/in/dirkburgers2103/"
+          ><ion-icon
+            class="fs-650 icon-text-white"
+            name="logo-linkedin"
+          ></ion-icon
+        ></a>
       </div>
     </footer>
     <!-- ion-icon -->

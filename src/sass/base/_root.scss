@@ -3,9 +3,10 @@
 
   --clr-black: rgb(33, 33, 33);
   --clr-yellow: rgb(254, 216, 60);
-  --clr-white: #f3f3f3;
-  --clr-purple: rgb(162, 91, 210);
+  --clr-white: rgb(243, 243, 243);
+  --clr-purple: rgb(153, 51, 255);
 
+  // rgb(162, 91, 210);
   /* font-families */
   --ff-sans-serif: "Montserrat", sans-serf;
 
@@ -26,6 +27,10 @@
     --fs-600: 3.5rem;
     --fs-450: 1.75rem;
     --fs-300: 1.125rem;
+  }
+
+  @media (max-width: 24em) {
+    --fs-450: 1.2rem;
   }
 }
 
@@ -82,6 +87,7 @@ body {
   background: var(--clr-yellow);
   color: var(--clr-black);
   // overflow-x: hidden;
+  scroll-snap-type: y mandatory;
 }
 
 /* A elements that don't have a class get default styles */

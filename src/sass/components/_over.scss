@@ -1,0 +1,46 @@
+.over {
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  min-height: calc(var(--vh) * 100);
+  --gap: 2rem;
+}
+
+.over-mij {
+  flex-direction: column;
+  grid-column: span 6;
+  padding-block-end: 6rem;
+}
+
+.about-picture {
+  grid-column: span 6;
+  justify-self: center;
+  align-self: center;
+  padding-block-start: 12rem;
+}
+
+.about-img {
+  border-radius: 20px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.395);
+  width: 30rem;
+  justify-self: center;
+}
+
+@media (min-width: 69em) {
+  .over-mij {
+    grid-column: span 3;
+    padding-inline: 1.5rem;
+    padding-block-end: 0;
+  }
+
+  .about-picture {
+    grid-column: span 3;
+    padding-inline: 1.5rem;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    padding-block-start: 0;
+  }
+}

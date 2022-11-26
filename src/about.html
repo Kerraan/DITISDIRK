@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Javascript -->
+    <script src="assets/js/general.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>DITISDIRK</title>
+  </head>
+  <body class="grid-container--2-col">
+    <header class="flex">
+      <a href="index.html#home">
+        <img
+          src="./assets/images/DITISDIRK.png"
+          alt="Logo DITISDIRK"
+          class="logo"
+        />
+      </a>
+      <div
+        class="mobile-nav-toggle"
+        aria-controls="mainnav"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+        <div class="menu-btn__burger"></div>
+      </div>
+      <nav>
+        <ul
+          class="flex mainnav"
+          id="mainnav"
+          aria-label="Main"
+          data-visible="false"
+        >
+          <li class="menu-link">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="menu-link">
+            <a class="nav-link" href="index.html#work">Werk</a>
+          </li>
+          <li class="menu-link">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="menu-link">
+            <a href="about.html">Over</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="grid-container--6-col over flex">
+      <picture class="about-picture">
+        <source srcset="/assets/images/ditbenik.webp" type="image/webp" />
+        <source srcset="/assets/images/ditbenik" type="image/jpg" />
+        <img
+          src="/assets/images/ditbenik.jpg"
+          alt="Dit is Dirk"
+          class="about-img"
+        />
+      </picture>
+      <article class="over-mij flex">
+        <h2 class="work-title fs-600 bold">Dirk Burgers uit Utrecht</h2>
+        <p>
+          Na vier jaar als informatie- en organisatieadviseur heb ik de switch
+          gemaakt naar webdevelopment. Het is een herontdekte passie die ik
+          nieuw leven ingeblazen heb. Ik voel mij het meest thuis tussen design
+          en ontwikkeling van de front-end. Op dit moment ben ik bezig met het
+          afronden van een freelance webdevelopment opdracht en kijk ik ernaar
+          uit om weer onderdeel te zijn van een team.
+        </p>
+      </article>
+    </main>
+    <footer
+      id="contact"
+      class="bg-black section grid-container--2-col text-white"
+    >
+      <div class="contact-title">
+        <p class="fs-600 text-white bold">Laten we samenwerken!</p>
+      </div>
+      <div class="email">
+        <p>Email:</p>
+        <a class="text-white" href="mailto: dirk.burgers@live.nl"
+          >dirk.burgers@live.nl</a
+        >
+      </div>
+      <div class="mobiel">
+        <p>Mobiel:</p>
+        <a class="text-white" href="tel:+31681767514">+31 6 81767514</a>
+      </div>
+      <div class="socials flex">
+        <ion-icon class="fs-650" name="logo-github"></ion-icon>
+        <ion-icon class="fs-650" name="logo-linkedin"></ion-icon>
+      </div>
+    </footer>
+    <!-- ion-icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      $(".nav-link").onclick(function () {
+        $(".nav-link").closest("li").removeClass("active");
+        $(this).closest("li").addClass("active");
+      });
+    </script>
+  </body>
+</html>

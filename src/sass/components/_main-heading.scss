@@ -3,15 +3,25 @@
 .hero {
   grid-column: span 6;
   padding-block-start: 10rem;
-  padding-block-end: 2rem;
+  padding-block-end: 3rem;
   flex-direction: column;
   --gap: 0.5rem;
-  height: 100vh;
+  min-height: calc(var(--vh) * 100);
+}
+
+.icon-text-black {
+  text-decoration: none;
+  color: var(--clr-black);
+
+  &:hover {
+    color: var(--clr-purple);
+  }
 }
 
 @media (min-width: 55em) {
   .hero {
     justify-content: center;
     transform: translateY(-10%);
+    padding-inline: 3rem;
   }
 }
