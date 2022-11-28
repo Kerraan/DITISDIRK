@@ -55,12 +55,9 @@ header {
     --text-color: var(--clr-white);
   }
 
-  .menu-link a:active {
-    color: var(--text-color);
-    font-weight: 600;
-  }
-
-  .menu-link a:focus {
+  .menu-link a:active,
+  .menu-link a:focus,
+  .menu-link a:visited {
     color: var(--text-color);
     font-weight: 600;
   }
