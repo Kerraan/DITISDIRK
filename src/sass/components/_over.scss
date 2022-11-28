@@ -27,12 +27,14 @@
   justify-self: center;
 }
 
-@media (min-width: 69em) {
+@media (min-width: 55em) {
   .over {
     margin-block-start: 12rem;
     transform: translateY(-15%);
   }
+}
 
+@media (min-width: 69em) {
   .over-mij {
     grid-column: span 3;
     padding-inline: 1.5rem;
