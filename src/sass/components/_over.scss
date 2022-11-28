@@ -28,6 +28,11 @@
 }
 
 @media (min-width: 69em) {
+  .over {
+    margin-block-start: 12rem;
+    transform: translateY(-15%);
+  }
+
   .over-mij {
     grid-column: span 3;
     padding-inline: 1.5rem;

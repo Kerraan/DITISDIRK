@@ -20,8 +20,11 @@
 
 @media (min-width: 55em) {
   .hero {
+    padding-block-start: 0;
+    margin-block-start: 12rem;
     justify-content: center;
-    transform: translateY(-10%);
+    transform: translateY(-22%);
     padding-inline: 3rem;
+    min-height: calc(var(--vh) * 100);
   }
 }
